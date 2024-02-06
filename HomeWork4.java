@@ -12,7 +12,7 @@ public class HomeWork4 {
 
         /* *3 Напишите функцию, которая принимает два целых числа от 25 до 75
         и возвращает true, если в обоих числах есть общая цифра */
-        System.out.println(number3(25, 75));
+        number3(25, 75);
 
         /* *4 Напишите функцию, принимающую целое число (секунды)
         и печатающую часов:минут:секунд - например, 3662 -> 1:1:2 */
@@ -32,33 +32,33 @@ public class HomeWork4 {
     //#1
     public static void fiveOrSeven(int n) {
         if (n % 5 == 0) {
-            System.out.println("Число равно пяти");
+            System.out.println(true);
         } else if (n % 7 == 0) {
-            System.out.println("Число равно семи");
+            System.out.println(true);
         } else {
-            System.out.println("Число не равно пяти или семи");
+            System.out.println(false);
         }
     }
 
     // #2
     public static void year(int y) {
         if (y % 400 == 0) {
-            System.out.println("Високосный");
+            System.out.println(true);
         } else if (y % 100 == 0) {
-            System.out.println("Не високосный");
+            System.out.println(false);
         } else if (y % 4 == 0) {
-            System.out.println("Високосный");
+            System.out.println(true);
         } else {
-            System.out.println("Не високосный");
+            System.out.println(false);
         }
     }
 
     // #3
-    public static String number3 (int one, int two){
+    public static void number3 (int one, int two){
         if (one >= 25 && one <= 75 && two >= 25 && two <= 75) {
-            return "True";
+            System.out.println(true);
         }else {
-            return "False";
+            System.out.println(false);
         }
     }
 
